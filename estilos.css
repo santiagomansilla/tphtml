@@ -1,0 +1,193 @@
+                     
+                     * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                
+                    }
+                    /* HEADER */                    
+                    /* nav top */
+                    /* todos los a exp active y compratkt */
+                    
+                    #navbarNav .nav-link {
+                        color: #646668f5;  
+                    }
+                    #navbarNav .nav-link:focus,
+                    #navbarNav .nav-link:hover {
+                        color:white;
+                        font-size: 1.25rem;
+                    }
+                    #navbarNav .nav-link.active {
+                        color: white;
+                    }                    
+                    #navbarNav .nav-link.active:focus,
+                    #navbarNav .nav-link.active:hover {
+                        color: #646668f5;
+                        font-size: 1.25rem;
+                    }            
+                    #navbarNav .nav-link.compratkt {
+                        color: #299241;
+                    }
+                    #navbarNav .nav-link.compratkt:hover,
+                    #navbarNav .nav-link.compratkt:focus {
+                        color: #299241;
+                        font-size: 1.25rem;
+                    } 
+                    /*Jumbo*/
+                    
+                    #jumbotron {
+                        display: flex;
+                        background-image: url(./img/ba1.jpg);
+                        height: 40rem;
+                        max-width: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position:center; 
+                        filter:brightness(0.9);
+                    }
+                    .titPbtn {
+                        color: white;
+                        display: flex;
+                        text-align: right;
+                        align-self: flex-end;
+                        justify-content:flex-end;                      
+                     }
+                    /*Boton comprar TKT y enviar*/
+                    
+                    .btn.btn-success {
+                        background-color: #8db600;
+                        border: 1px solid #8db600;
+                    }
+                    /*oradores article*/
+                    
+                    #oradores {
+                        display: flex;
+                        flex-flow: column nowrap;
+                    }
+                    .card-deck {
+                        display:flex;
+                        flex-flow: row nowrap; 
+                        justify-content: center;
+                    }
+                    .card {
+                        margin: 15px; 
+                    }
+                    .card-text {
+                        font-size: .65rem;
+                    }
+                    .card-body h5 {
+                        padding-top: 10px;
+                        font-weight: bolder;
+                    }
+                    .btn-info,
+                    .btn-danger,
+                    .btn-secondary,
+                    .btn-warning {
+                        font-weight: 700;
+                        padding: .01rem .01rem;
+                    }
+                    .btn-info {
+                        background-color: #3f888f;
+                    }
+                    .titleoradores {
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    .titleoradores h7,
+                    .titleform h7 {
+                        font-size: .6rem;
+                    }
+                    /* oradorform */
+                    
+                    #oradorform {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                    }
+                    .titleform {
+                        width: 50%;
+                        text-align: center;
+                    }
+                    .formulario {
+                        width: 50%;
+                    }
+                    .formulario h7 {
+                        font-size: .8rem;
+                    }
+                    
+                    .titleform h6 {
+                        font-size: .8rem;
+                    }
+                    /* nav footer */
+                    
+                    nav.navbar.navbar-expand-lg{
+                        justify-content: center;
+                    }
+                    a.footer.nav-link {
+                        color: white;
+                    } 
+                    
+                    a.footer.nav-link:focus,
+                    a.footer.nav-link:hover {
+                        color: rgb(152, 164, 196);
+                        font-size: 1.25rem;
+                    }
+                    /*medias queries*/
+                    /*tablets*/
+                    @media screen and (max-width:768px) {}
+                        /*navbar*/
+                        .nav-link{
+                            text-align: center;  
+                        }
+                        #footer ul{
+                            justify-content: center;
+                        }
+
+
+                    /*celulares*/
+                    @media screen and (max-width:576px) {
+                        /*navbar*/
+                        .navbar{
+                            display: flex;
+                            flex-flow:row nowrap;
+                        }
+                        #navbarNav .nav-link {
+                            color: white;  
+                        }
+                        #navbarNav .nav-link:focus,
+                        #navbarNav .nav-link:hover {
+                            color:white;
+                            font-size: 1.10rem;
+                        }
+                        #navbarNav .nav-link.active:focus,
+                        #navbarNav .nav-link.active:hover {
+                        color: white;
+                        font-size: 1.10rem;
+                    }
+                    #jumbotron {                          
+                        background-size:cover;                                  
+                    }        
+
+                        /*oradores article*/
+                        .card-deck {
+                            flex-flow: column nowrap;
+                            align-self: center;
+                        }
+                        /*article buenos aires*/
+                        .bairesart{
+                            align-self: center;
+                        }
+
+                        /*formulario*/
+                        .titleform,
+                        .formulario{
+                            width:90%;
+                        }
+                        /*footer*/
+                        #footer ul{
+                            flex-flow: column wrap;
+                             justify-content: center;
+              
+                        }
+
+                    }
